@@ -1,3 +1,7 @@
 <h1>
   {{title}}
 </h1>
+<button (click)="showHiddenText = true"> PUSH ME!</button>
+<div *ngIf="showHiddenText" id="hiddenText">
+  <p>The most beautiful things in the world cannot be seen or touched, they are felt with the heart.</p>
+</div>
