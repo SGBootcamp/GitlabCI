@@ -7,8 +7,8 @@ describe('gitlab-ci-app App', () => {
     page = new GitlabCiAppPage();
   });
 
-  it('should display message saying app works', () => {
+  it('check title is shown properly', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('What is essential is invisible to the eye');
   });
 });
